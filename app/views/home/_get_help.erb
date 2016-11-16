@@ -1,0 +1,25 @@
+<div class="features-container section-container" id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 features section-description wow fadeIn">
+        <h2>Get Help</h2>
+        <div class="divider-1 wow fadeInUp"><span></span></div>
+      </div>
+    </div>
+    <div class="row text-left">
+      <div class="col-sm-8 col-sm-push-2 lead">
+        If you are in <b>danger</b> or need assistance please use the
+        following to find a support center near you.
+
+        <%= form_for @help_center, method: :get  do |f| %>
+          <div>
+            <%= f.select :type, HelpCenter::CenterTypes.keys, include_blank: true %>
+            <%= f.text_field :city, placeholder: "City" %>
+            <%= f.text_field :state, placeholder: "State" %>
+            <%= f.submit "Get Help", class: "btn btn-success btn-lg" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

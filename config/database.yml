@@ -15,7 +15,8 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
+  adapter: postgis
+  schema_search_path: public, postgis
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -82,4 +83,5 @@ production:
   <<: *default
   database: buildleft_production
   username: buildleft
+  adapter: postgis
   password: <%= ENV['BUILDLEFT_DATABASE_PASSWORD'] %>

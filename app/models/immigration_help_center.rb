@@ -1,0 +1,3 @@
+class ImmigrationHelpCenter < HelpCenter
+
+end

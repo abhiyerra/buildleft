@@ -1,0 +1,36 @@
+<!-- More features -->
+<div class="quickstart-container section-container section-container-gray-bg" id="quickstart">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 more-features section-description wow fadeIn">
+        <h2>Volunteer</h2>
+        <div class="divider-1 wow fadeInUp"><span></span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 more-features section-description wow fadeIn lead">
+        <p>
+          Help your local Left group whether the Democratic Party,
+          helping a local help center or otherwise.
+        </p>
+        <%= form_for @user do |f| %>
+          <%= f.text_field :first_name, placeholder: "First Name" %>
+          <br/>
+          <%= f.text_field :last_name, placeholder: "Last Name" %>
+          <br/>
+          <%= f.text_field :email, placeholder: "Email" %>
+          <br/>
+          <%= f.text_field :phone_number, placeholder: "Phone Number (Optional)" %>
+          <br/>
+          <%= f.text_field :city, placeholder: "City" %>
+          <br/>
+          <%= f.text_field :state , placeholder: "State" %>
+          <br/>
+
+          <%= f.submit "Sign Up", class: "btn btn-success btn-lg" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
