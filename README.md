@@ -1,24 +1,5 @@
-# README
+# BuildLeft
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Direct people who may be in trouble in America due to the policies of the new administration get help while also provide those organizations volunteers, donations and resources.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Create a platform for the Left to mobilize, to fight laws at the local level, and get the Left more involved in democracy across America by using lean and agile techniques.
