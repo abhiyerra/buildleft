@@ -81,7 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: buildleft_production
-  username: buildleft
-  adapter: postgis
-  password: <%= ENV['BUILDLEFT_DATABASE_PASSWORD'] %>
+  url: <%= ENV.fetch('DATABASE_URL', '').sub(/^postgres/, "postgis") %>
