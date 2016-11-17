@@ -27,6 +27,10 @@
           <br/>
           <%= f.text_field :state , placeholder: "State" %>
           <br/>
+          Speciality
+          <br/>
+          <%= f.select :speciality, User::SPECIALITY %>
+          <br/>
 
           <%= f.submit "Sign Up", class: "btn btn-success btn-lg" %>
         <% end %>

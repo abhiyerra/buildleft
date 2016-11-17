@@ -3,14 +3,18 @@ Rails.application.routes.draw do
 
   root to: "home#index"
 
-
   get 'about', to: "home#about", as: :about
 
   resources :help_centers do
-    get 'donate'
+    collection do
+      get 'search'
+    end
+    member do
+      get 'donate'
+    end
   end
 
-  resources :users do
+  resources :volunteers do
 
   end
 end

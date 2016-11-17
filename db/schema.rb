@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(version: 20161116042301) do
     t.string   "phone_number"
     t.string   "city"
     t.string   "state"
+    t.string   "speciality"
+    t.string   "notes"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
