@@ -14,7 +14,7 @@
           Help your local Left group whether the Democratic Party,
           helping a local help center or otherwise.
         </p>
-        <%= form_for @user do |f| %>
+        <%= form_for @volunteer do |f| %>
           <%= f.text_field :first_name, placeholder: "First Name" %>
           <br/>
           <%= f.text_field :last_name, placeholder: "Last Name" %>
@@ -29,7 +29,7 @@
           <br/>
           Speciality
           <br/>
-          <%= f.select :speciality, User::SPECIALITY %>
+          <%= f.select :speciality, Volunteer::SPECIALITY %>
           <br/>
 
           <%= f.submit "Sign Up", class: "btn btn-success btn-lg" %>

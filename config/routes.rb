@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :help_centers do
     collection do
       get 'search'
+      get 'donate'
     end
     member do
       get 'donate'
